@@ -12,5 +12,5 @@ export HOROVOD_GPU_OPERATIONS=NCCL
 
 # create the conda environment
 conda env create --prefix $ENV_PREFIX --file environment.yml --force
-
+conda activate $ENV_PREFIX
 HOROVOD_WITH_MPI=1 HOROVOD_WITH_TENSORFLOW=1 pip install --no-cache-dir horovod
