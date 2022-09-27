@@ -1,0 +1,23 @@
+name: null
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - ccache
+  - cmake
+  - cudatoolkit
+  - cudnn=8.1
+  - cxx-compiler
+  - jupyterlab
+  - mpi4py # installs cuda-aware openmpi
+  - nccl
+  - nvcc_linux-64
+  - openmpi
+  - pip
+  - pip:
+    - tensorflow-gpu==2.10.*
+    - -r requirements.txt
+  - python=3.8
+  - tensorboard
